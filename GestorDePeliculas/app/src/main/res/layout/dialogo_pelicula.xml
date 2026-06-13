@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Título *"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_edittext"/>
+
+    <EditText
+        android:id="@+id/etDirector"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Director"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_edittext"/>
+
+    <EditText
+        android:id="@+id/etGenero"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Género"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_edittext"/>
+
+    <EditText
+        android:id="@+id/etAno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Año"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_edittext"/>
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Descripción"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_edittext"
+        android:gravity="top"/>
+
+    <Spinner
+        android:id="@+id/spEstado"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/estados_pelicula"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puntuación:"
+            android:layout_marginRight="10dp"/>
+
+        <RatingBar
+            android:id="@+id/rbPuntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Guardar"
+        android:backgroundTint="#4CAF50"/>
+
+</LinearLayout>

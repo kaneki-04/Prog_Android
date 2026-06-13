@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_agregar"
+        android:title="Agregar Película"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_filtrar"
+        android:title="Filtrar"
+        android:icon="@android:drawable/ic_menu_view"
+        android:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_perfil"
+        android:title="Mi Perfil"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_cerrar_sesion"
+        android:title="Cerrar Sesión"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:showAsAction="never"/>
+</menu>
